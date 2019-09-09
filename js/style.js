@@ -125,7 +125,7 @@ class Page{
             success:function(res){
                 that.shuju=res;
                 that.display()
-               //console.log(res);
+               console.log(res);
                //5.蒙版特效
                                 $('#hotBuy').children('.margin').hover(function(){
                                     $(this).find('.moban').stop().show(1);
@@ -137,6 +137,25 @@ class Page{
                                 },function(){
                                     $(this).find('.moban').stop().show();
                                 })
+            //进入商品详情页储存点击的商品的id，从而在商品详情页对应的加载数据
+            that.box1.children('.commo').on('click',function(){
+                //console.log(111);
+               var goodsId=that.shuju[$(this).index()].goodsId
+               //console.log(goodsId);
+               localStorage.setItem('goods',goodsId);
+               window.location.href='./goodsdetail.html';
+            })
+            that.box2.children('.commo').on('click',function(){
+                //console.log(111);
+               var goodsId=that.shuju[$(this).index()+6].goodsId
+               //console.log(goodsId);
+               localStorage.setItem('goods',goodsId);
+               window.location.href='./goodsdetail.html';
+            })
+
+
+
+
             }
         })
     }
@@ -147,7 +166,7 @@ class Page{
             str1+=
             `
             <li class="commo">
-                <a href="#"><img src="${(this.shuju[i].urlfrist)}" alt=""></a>
+                <a href="javascript:void(0)"><img src="${(this.shuju[i].urlfrist)}" alt=""></a>
                 <div class="moban2 moban"></div>
             </li>
             
@@ -157,7 +176,7 @@ class Page{
             str2+=
             `
             <li class="commo">
-                <a href="#"><img src="${(this.shuju[i].urlfrist)}" alt=""></a>
+                <a href="javascript:void(0)"><img src="${(this.shuju[i].urlfrist)}" alt=""></a>
                 <div class="moban2 moban"></div>
             </li>
             `
