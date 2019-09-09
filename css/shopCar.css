@@ -1,0 +1,7 @@
+main{}
+main .margin{margin-top:20px;background: #ffffff;height: 1000px;}
+main .margin .main-t{height: 85px;background: url(../images/liucheng.gif) no-repeat 0 0};
+main .margin .main-c{}
+main .margin .main-c .checktxt{width: 1160px;height: 32px;background: #c40001;padding-left: 40px;font-size:14px;color: #ffffff;line-height: 32px;}
+main .margin .main-c table{margin-top: 10px;}
+main .margin .main-c table thead tr th{background: #cccccc;height: 30px;}
