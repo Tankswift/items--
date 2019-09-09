@@ -1,0 +1,156 @@
+.margin{width: 1200px;margin: 0 auto;}
+html{background: #f7f7f7;}
+body{width: 1349px;}
+/* 头部 */
+header{height: 30px;border-bottom: 1px solid #dcdcdc;background: #f7f7f7;}
+header .margin{}
+header .margin .loginbox{float: left;line-height: 30px}
+header .margin .loginbox .loginbox-l{float: left;}
+header .margin .loginbox .loginbox-l .welcom{float: left;}
+header .margin .loginbox .loginbox-l .linklogin{float: left;margin-left: 10px;font-weight: 700;}
+header .margin .loginbox .loginbox-l .linklogin a{color: red;}
+header .margin .loginbox .loginbox-r{float: left;margin-left: 30px}
+header .margin .loginbox .loginbox-r b{color: red;font-weight: 700;}
+header .margin .linkbox{float: right;width: 600px;line-height: 30px}
+header .margin .linkbox ul{}
+header .margin .linkbox ul li{float: left}
+header .margin .linkbox ul li a{margin: 0 20px;width: 80px;}
+header .margin .linkbox ul li a span{color: red;margin:0 5px}
+header .margin .linkbox ul li a:hover{border-bottom: 1px solid #000000}
+
+/* 搜索框 */
+#search{height: 120px;background: #f7f7f7;}
+#search .margin{}
+#search .margin .s-image1{margin-top: 20px;width: 320px;float: left;}
+#search .margin .searchform{float: left;width: 500px;height: 37px;margin: 34px 0 0 55px;}
+#search .margin .searchform ul{width: 74px;height: 36px;float: left;border: 1px solid #b3b3b3;border-right: 0;position: relative; }
+#search .margin .searchform ul li{width: 74px;height: 35px;background: #626262;
+text-align: center;font: 16px/35px "";position: absolute;}
+#search .margin .searchform ul li a{color: #d9d9d9;}
+#search .margin .searchform #textsearch{border: 0;height: 35px;float: left;width: 320px;border:1px solid #b3b3b3;border-left: 0;padding-left: 10px;}
+#search .margin .searchform #btnsearch{border: 0;float: left;height: 37px;width: 90px;background:#c40001;color: #f7f7f7;font: 18px/37px "";}
+#search .margin .s-image2{float: right;width: 295px;height: 38px;margin: 34px 0 0 30px;}
+
+
+
+/* 导航栏 */
+nav{height: 38px;background: #c40001}
+nav .margin{}
+nav .margin .allkind{width:200px;height: 38px;float: left;font:15px/38px "";color: #f7f7f7;background: #b20000;position: relative;}
+nav .margin .allkind .xiala1{width:200px;height: 38px;}
+nav .margin .allkind .xiala1 .allgoods{margin-right: 80px;margin-left: 10px}
+nav .margin .allkind .xiala2{width: 200px;height: 452px;position: absolute;top:38px;display: none;
+    background: #5a5a5a;z-index: 9999;}
+nav .margin .allkind .xiala2 .listbig{width: 200px;position: relative;}
+nav .margin .allkind .xiala2 .listbig li{height: 34px;line-height: 34px;border-bottom: 1px solid #4e4e4e;}
+nav .margin .allkind .xiala2 .listbig li span{color: #787878}
+nav .margin .allkind .xiala2 .listbig li a{color: #ffffff;display: inline-block;margin-left: 10px;margin-right: 88px;font-size: 12px;}
+nav .margin .allkind .xiala2 .listbig li a i{display: inline-block;width: 24px;height: 24px;background: url(../images/bg1.png) no-repeat;vertical-align:middle;margin-right: 5px;}
+nav .margin .allkind .xiala2 .listbig li a i.i2{background-position:0 -24px;}
+nav .margin .allkind .xiala2 .listbig li a i.i3{background-position:0 -48px;}
+nav .margin .allkind .xiala2 .listbig li a i.i4{background-position:0 -72px;}
+nav .margin .allkind .xiala2 .listbig li a i.i5{background-position:0 -96px;}
+nav .margin .allkind .xiala2 .listbig li a i.i6{background-position:0 -120px;}
+nav .margin .allkind .xiala2 .listbig li a i.i7{background-position:0 -144px;}
+nav .margin .allkind .xiala2 .listbig li a i.i8{background-position:0 -168px;}
+nav .margin .allkind .xiala2 .listbig li a i.i9{background-position:0 -192px;}
+nav .margin .allkind .xiala2 .listbig li a i.i10{background-position:0 -216px;}
+nav .margin .allkind .xiala2 .listbig li a i.i11{background-position:0 -240px;}
+nav .margin .allkind .xiala2 .listbig li .biglist{position: absolute;width: 600px;height: 452px;left:200px;top:0;background: #ffffff;;display: none;z-index: 9999;}
+nav .margin .allkind .xiala2 .listbig li .biglist .liebiao{width: 400px;height: 452px;float: left;}
+nav .margin .allkind .xiala2 .listbig li .biglist .liebiao .big .small{width: 170px;margin-left: 20px;float: left;margin-top:20px;}
+nav .margin .allkind .xiala2 .listbig li .biglist .liebiao .big .small .gaodian{color: #000000;border-bottom: 2px solid #000000}
+nav .margin .allkind .xiala2 .listbig li .biglist .liebiao .big .small .span{color: #000000}
+nav .margin .allkind .xiala2 .listbig li .biglist .aboutimg{width: 200px;height: 452px;background: orange;float: left;}
+nav .margin .allkind .xiala2 .listbig li .biglist .aboutimg img{width: 200px;height: 452px;display: block;}
+nav .margin .navlan{width: 720px;height: 38px;float: left;font-family: 'Microsoft Yahei';}
+nav .margin .navlan .navlanul{}
+nav .margin .navlan .navlanul li{float: left;width: 60px;height: 38px;font: 15px/38px "";text-align: center;}
+nav .margin .navlan .navlanul li a{color: #ffffff }
+nav .margin .shopcar{width: 240px;height: 38px;float: right;font-size: 12px;position: relative;}
+nav .margin .shopcar .shopcarico{width: 134px;height: 38px;font: 12px/38px "";background: #680a00;float: left;}
+nav .margin .shopcar .shopcarico i{background: url(../images/basic_cart.png) no-repeat center;display: inline-block;width: 35px;height: 35px;vertical-align:middle;}
+nav .margin .shopcar .shopcarico em{color: #ffffff;margin-left: 10px;}
+nav .margin .shopcar .shopcarico b{display: inline-block;color: #ffffff}
+nav .margin .shopcar .shopcarico b span{color: #ff0000}
+nav .margin .shopcar .txtshopcar{width: 92px;height: 38px;float: left;font: 16px/38px "";text-align: center;background: #9f0000}
+nav .margin .shopcar .txtshopcar a{color: #ffffff}
+/* <!-- 下来实现的 --> */
+nav .margin .shopcar .listshopcar{position: absolute;top: 38px;width: 245px;left: -20px;border:1px solid #000000;display: none;z-index: 100;height: 50px;}
+
+
+/* <!-- banner处 --> */
+#banner{height: 452px;}
+#banner .boxbanner{width: 1347px;height: 450px;position: relative;margin: 0px auto;overflow:hidden;}
+#banner .boxbanner .imgbox img{display: block;position:absolute;width: 100%px;height:450px;left: 1347px;}
+#banner .boxbanner .imgbox img:nth-child(1){left: 0;}
+
+
+
+/* <!-- 热卖 --> */
+#hotBuy{height: 448px;margin-top: 20px;}
+#hotBuy .margin{}
+#hotBuy .margin .hotBuyheader{height: 42px;border-bottom: 2px solid #000;}
+#hotBuy .margin .hotBuyheader h2{float: left;font: 400 22px/42px "";}
+#hotBuy .margin .hotBuyheader b{float: left;border-left: 1px solid #acacac;padding-left: 10px;margin-left: 10px;margin-top: 5px;color: #acacac;font-size: 12px;}
+#hotBuy .margin .content{display: flex;justify-content: center;background: #ffffff}
+#hotBuy .margin .content .content-l{width: 229px;height: 406px;}
+#hotBuy .margin .content .content-l .contentwomenu{font-family: 'Microsoft Yahei';padding: 10px 5px;
+ height: 190px;overflow: hidden;}
+#hotBuy .margin .content .content-l .contentwomenu li{width: 65px;height: 28px;overflow: hidden;float: left;text-align: center;font-weight: bold;margin: 3px;border: 1px solid #FDEAEA;line-height:28px;}
+#hotBuy .margin .content .content-l .contentwomenu li:hover a{color: red;border-bottom:1px solid red}
+
+#hotBuy .margin .content .content-c{width: 386px;height: 406px;position: relative;}
+#hotBuy .margin .content .content-c .datu{display: block;width: 386px;height: 406px;position: absolute;}
+#hotBuy .margin .content .content-c .datu img{display: block;width: 386px;height: 406px;}
+#hotBuy .margin .content .content-c .moban1{width: 386px;height: 406px;position: absolute;background: rgba(200, 200, 200,0.3);z-index: 999;display: none;}
+
+#hotBuy .margin .content .content-r{width: 585px;height: 406px;}
+#hotBuy .margin .content .content-r .content-r-list{overflow: hidden;}
+#hotBuy .margin .content .content-r .content-r-list li{width: 194px;height: 202px;float: left;border-right: 1px solid #dddddd;border-bottom: 1px solid #dddddd;position: relative;}
+#hotBuy .margin .content .content-r .content-r-list li a{position:absolute;width: 194px;height: 202px;}
+#hotBuy .margin .content .content-r .content-r-list li a img{display: block;width: 194px;height: 202px;}
+#hotBuy .margin .content .content-r .content-r-list li .moban2{position:absolute;width: 194px;height: 202px;z-index: 999;display: none;background: rgba(200,200,200,0.3);}
+
+
+
+
+
+
+
+
+/* <!-- server图片模块 --> */
+#server-all{height: 170px;display: flex;justify-content:center;align-items: center;background: #ffffff;margin-top:30px;}
+#server-all .margin{}
+#server-all .margin .server-alllist{display: flex;justify-content: space-around;align-items: center;}
+#server-all .margin .server-alllist .serverli{width: 140px;height: 96px;text-align: center;}
+#server-all .margin .server-alllist .serverli img{display: block;width: 50px;height: 50px;margin: 0 auto}
+#server-all .margin .server-alllist .serverli h2{margin:10px 0;}
+#server-all .margin .server-alllist .serverli span{font: 12px '';color: #525151}
+
+
+
+/* <!-- 客服联系方式 --> */
+#customer{width: 1349px;height: 200px;margin-top:10px;}
+#customer .abouslist{width: 640px;height: 138px;float: left;margin-top: 20px;}
+#customer .abouslist dl{float: left;width: 110px;height: 138px;margin-right: 50px;}
+#customer .abouslist dl dt{font: 700 16px "";padding-bottom: 10px;}
+#customer .abouslist dl dd{height: 22px;font: 12px/22px "";}
+#customer .callphone{width: 180px;height: 80px;float: left;margin-top: 20px;}
+#customer .callphone dl{width: 180px;}
+#customer .callphone dt{font: 700 16px "";margin-bottom: 10px;}
+#customer .callphone dd{font: 10px/22px "";color:#636363;white-space: nowrap;}
+#customer .callphone dd.f_lan{font: 26px/32px "";color: #c40001;}
+
+#customer .twocode{width: 300px;height: 130px;float: right;margin-top: 20px;border-left: 1px dotted #CCCCCC}
+#customer .twocode .code1{float: left;margin: 0 20px}
+#customer .twocode .code2{float: left;}
+
+
+footer{height: 188px;width: 1349px;}
+footer .aboutus{height: 38px;text-align: center;background: #555555;font: 12px/38px "";color: #ffffff}
+footer .aboutus a{color: #ffffff;margin:0 10px;}
+footer .aboutus a:hover{border-bottom: 1px solid #ffffff}
+footer .footer-content{height: 142px;text-align: center;margin-top: 20px;}
+footer .footer-content p{color:#999}
+footer .footer-content .mt-20{margin-top: 20px}
