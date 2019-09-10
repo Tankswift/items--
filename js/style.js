@@ -61,7 +61,7 @@ $(this).css({
 
 $('.shopcar').hover(function(){
     $(this).children('.listshopcar').stop().show(1).css({
-        background:'red',
+        background:'#fff',
        
     });
    
@@ -124,8 +124,8 @@ class Page{
             url:this.url,
             success:function(res){
                 that.shuju=res;
+                window.cardata=res;
                 that.display()
-               console.log(res);
                //5.蒙版特效
                                 $('#hotBuy').children('.margin').hover(function(){
                                     $(this).find('.moban').stop().show(1);
@@ -152,6 +152,44 @@ class Page{
                localStorage.setItem('goods',goodsId);
                window.location.href='./goodsdetail.html';
             })
+
+            //首页的购物车渲染    
+            var localData1=localStorage.getItem('car')?JSON.parse(localStorage.getItem('car')):[];
+            $('.fristnum').html(localData1.length);
+            var str3='';
+            for(var i=0;i<window.cardata.length;i++){
+                for(var j=0;j<localData1.length;j++){
+                    if(window.cardata[i].goodsId==localData1[j].id){
+                        str3+=`
+                        <div class="y2">
+                        <img src="${window.cardata[i].urlfrist}" alt="">
+                        <span>${window.cardata[i].name}</span>
+                    </div>
+                        
+                        `
+                    }
+
+                }
+            }
+            str3=`<div class="y1">最近加入宝贝：</div>${str3}<div class="y3">
+            <span class="tank">进入购物车</span>
+            </div>`
+            $('.listshopcar').html(str3);
+            $('.tank').on('click',function(){
+                window.location.href='./shoppCar.html'
+            }).css({
+                cursor:'pointer'
+            })
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -188,9 +226,37 @@ class Page{
 new Page();
 
 
+//楼增效果
+// $('#floor').children().children('li').click(function(){
+//     var index=$(this).index();
+//     var num1=$('nav')[0].offsetTop;
+//     var num2=$('#tankswift')[0].offsetTop;
+    
+// })
+// console.log($('nav')[0].offsetTop);151
+function floor(num,index){
+    $('#floor').children().children('li').eq(index).click(function(){
+        $('html').animate({
+            scrollTop:num,
+        })
+    })
+}
+var num1=$('nav')[0].offsetTop;
+var num2=$('#tankswift')[0].offsetTop;
+var num3=$('.l1')[0].offsetTop;
+var num4=$('.l2')[0].offsetTop;
+var num5=$('.l3')[0].offsetTop;
+var num6=$('.l4')[0].offsetTop;
+// var num5=$('#hotBuy').eq(2)[0].offsetTop;
+// var num6=$('#hotBuy').eq(3)[0].offsetTop;
 
-
-
+floor(num1,0);
+floor(num2,1);
+floor(num3,2);
+floor(num4,3);
+floor(num5,4);
+floor(num6,5);
+floor(0,6);
 
 
 

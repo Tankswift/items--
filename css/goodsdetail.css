@@ -4,7 +4,7 @@ main .margin .carbuy{height: 526px;padding-top: 20px;padding-left: 50px;}
 main .margin .carbuy .carbuy-l{width: 460px;height: 460px;float: left;border: 1px solid #cccccc;position: relative;}
 main .margin .carbuy .carbuy-l .fadasmall{width: 460px;height: 460px;position: absolute;}
 main .margin .carbuy .carbuy-l .fadasmall img{width: 460px;height: 460px;position: absolute;}
-main .margin .carbuy .carbuy-l .fadasmall .bbb{width: 100px;height: 100px;left: 0;top: 0;position: absolute;background:rgb(200,200,200,.6);}
+main .margin .carbuy .carbuy-l .fadasmall .bbb{width: 100px;height: 100px;left: 0;top: 0;position: absolute;background:rgb(200,200,200,.6);display: none;}
 main .margin .carbuy .carbuy-l .fadabig{width: 300px;height: 300px;position: absolute;overflow: hidden;left: 460px;top: 0;display: none;z-index: 99999999;}
 main .margin .carbuy .carbuy-l .fadabig img{position: absolute;}
 main .margin .carbuy .carbuy-c{width: 540;height: 431px;float: left;padding-left: 15px;}

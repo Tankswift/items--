@@ -39,11 +39,11 @@
                                         <td class="center">无</td>
                                         <td class="center">${this.record[i].price}</td>
                                         <td class="center">
-                                            <span class="span2">-</span>
+                                            <span class="span2 spanjian">-</span>
                                             <input type="text" min="0" numtype="int" size="3" value="${this.car[j].num}" id="txtinput">
-                                            <span class="span2">+</span>
+                                            <span class="span2 spanadd">+</span>
                                         </td>
-                                        <td class="center">5</td>
+                                        <td class="center">会员价</td>
                                         <td class="center"><span class="span3">￥${add}</span></td>
                                         <td class="center">
                                             <span class="span4 teshu">收藏</span>
@@ -83,7 +83,29 @@
             $('.box').html(str);
             $('.margin-b').children('span').html('￥'+sum);
             this.delete();
+            
         }
+        // addEvent(stringnum){
+        //     console.log(typeof num2);
+        //     $('.spanjian').on('click',function(){
+        //         if(num2==0){
+        //             num2=0;
+        //         }else{
+        //             num2--;
+                    
+        //         }
+        //     })
+        //     $('.spanadd').on('click',function(){
+        //         num2++;
+        //         that.car[j].num='num2';
+        //     })
+            
+        // }
+
+
+
+
+
         delete(){
             var that=this;
             $('.span4').on('click',function(){
@@ -131,9 +153,6 @@
 
     //     }
     // }
-
-
-
 
 
 
