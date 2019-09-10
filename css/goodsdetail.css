@@ -5,7 +5,7 @@ main .margin .carbuy .carbuy-l{width: 460px;height: 460px;float: left;border: 1p
 main .margin .carbuy .carbuy-l .fadasmall{width: 460px;height: 460px;position: absolute;}
 main .margin .carbuy .carbuy-l .fadasmall img{width: 460px;height: 460px;position: absolute;}
 main .margin .carbuy .carbuy-l .fadasmall .bbb{width: 100px;height: 100px;left: 0;top: 0;position: absolute;background:rgb(200,200,200,.6);}
-main .margin .carbuy .carbuy-l .fadabig{width: 300px;height: 300px;position: absolute;overflow: hidden;left: 460px;top: 0;display: none;}
+main .margin .carbuy .carbuy-l .fadabig{width: 300px;height: 300px;position: absolute;overflow: hidden;left: 460px;top: 0;display: none;z-index: 99999999;}
 main .margin .carbuy .carbuy-l .fadabig img{position: absolute;}
 main .margin .carbuy .carbuy-c{width: 540;height: 431px;float: left;padding-left: 15px;}
 main .margin .carbuy .carbuy-c .goodsname{line-height: 28px;font-size: 16px;margin-bottom: 20px;}
@@ -16,7 +16,7 @@ main .margin .carbuy .carbuy-c .goodsprice ul li span{color: #999999}
 main .margin .carbuy .carbuy-c .goodsprice ul li em{color: #000000;}
 main .margin .carbuy .carbuy-c .goodsprice ul li.t1 em{color: #E4393C;font-weight: bold;font-size: 20px;
 font-family: Arial,Verdana}
-main .margin .carbuy .carbuy-c .addTocar{width: 540;border-bottom: 1px solid #cccccc}
+main .margin .carbuy .carbuy-c .addTocar{width: 540;border-bottom: 1px solid #cccccc;position: relative;}
 main .margin .carbuy .carbuy-c .addTocar .size{width: 170px;height: 40px;font:18px/40px "";color: #ffffff;text-align: center;margin-top: 30px;margin-bottom:40px;}
 main .margin .carbuy .carbuy-c .addTocar .btnbuy{background: #c40001;float: left;margin-right: 20px;cursor: pointer;}
 main .margin .carbuy .carbuy-c .addTocar .btncar{float: left;background: #c45f00 url(../images/cart_icon.png) no-repeat 10px;padding-left: 30px;width: 140px;cursor: pointer;}
@@ -50,3 +50,8 @@ main .margin .goodsproduce .spnews .detailnews ul li{float: left;height: 30px;li
 main .margin .goodsproduce .spnews .imgnews{margin-top: 40px;width: 960px;}
 main .margin .goodsproduce .spnews .imgnews img{display: block;width: 960px;height: 1280px;} 
 main .margin .goodsproduce .spnews .spnews-t ul li.active{background: #ff0000;}
+.tiaozhuan{position: absolute;left: 792px;top: 475px;width: 300px;height: 100px;border: 1px solid #cccccc;background: #ffffff;display: none;}
+.tiaozhuan h5{font:16px/34px "";background: #fafafa;color: #333333;padding-left: 10px;border-bottom: 1px solid #cccccc}
+.tiaozhuan span{width: 80px;height:30px;border-radius: 5px;font: 14px/30px "";text-align: center;color: #ffffff;margin-top: 20px;margin-left: 46px;}
+.tiaozhuan span.r1{background: #ff0000;display: inline-block;cursor: pointer;}
+.tiaozhuan span.r2{background: #E4393C;display: inline-block;cursor: pointer;}

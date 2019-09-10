@@ -23,6 +23,7 @@
 			$.ajax({
 				url:this.url,
 				success:function(res){
+					window.ajaxshuju=res;
 					that.shuju=res;
 					console.log(res);
 					that.getId();
@@ -138,7 +139,68 @@
 	}
 	new Detail();
 
+//购物车保存
+class shopCar{
+	constructor(){
+		this.btn=$('.btncar');
+		this.addEvent();
+	}
+	addEvent(){
+		var that=this;
+		this.btn.on('click',function(){
+			//console.log(window.ajaxshuju);
+			that.data=window.ajaxshuju;
+			that.setLocal();
+		})
+	}
+	setLocal(){
+		var goodsId1=localStorage.getItem('goods');
+		for(var i=0;i<this.data.length;i++){
+			if(this.data[i].goodsId==goodsId1){
+				this.index=i;
+				this.saveLoacl();
+			}
+		}
+	}
+	saveLoacl(){
+		this.carshop=localStorage.getItem('car')?JSON.parse(localStorage.getItem('car')):[];
+			if(this.carshop.length<1){
+				this.carshop.push({
+					id:window.ajaxshuju[this.index].goodsId,
+					num:1
+				})
+			}else{
+				var temp=1;
+				for(var i=0;i<this.carshop.length;i++){
+					if(this.carshop[i].id==window.ajaxshuju[this.index].goodsId){
+						this.carshop[i].num++;
+						temp=0;
+					}				
+				}
+				if(temp){
+					this.carshop.push({
+							id:window.ajaxshuju[this.index].goodsId,
+							num:1		
+					})
+				}
+			}
+			localStorage.setItem('car',JSON.stringify(this.carshop));
+	}
 
+}
+new shopCar();
+
+
+//购物车按钮
+$('.btncar').on('click',function(){
+	if(localStorage.getItem('login')){
+		$('.tiaozhuan').stop().show().children('.r1').on('click',function(){window.location.href='./index.html'}).parent().children('.r2').on('click',function(){window.location.href='./shoppCar.html'});
+	}else{
+		window.location.href='./land.html';
+		
+	}
+	
+})
 
 
 

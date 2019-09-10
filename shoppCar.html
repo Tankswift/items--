@@ -210,7 +210,7 @@
             <div class="main-t"></div>
             <div class="main-c">
                 <div class="checktxt">确认订单信息</div>
-                <table border="1">
+                <table border="1 #ccc">
                         <thead>
                                 <tr style="background: #ccc">
                                   <th class="bl_none" width="360">          
@@ -224,20 +224,42 @@
                                   <th class="c_969696" width="164">操作</th>        
                                 </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                            </tr>
+                        <tbody class="box">
+                            
+                            <!-- <tr>
+                                <td>
+                                    <img src="images/ceshiimage.png" alt="">
+                                    <span class="span1">时代峰峻开始点击</span>
+                                </td>
+                                <td class="center">无</td>
+                                <td class="center">￥1212</td>
+                                <td class="center">
+                                    <span class="span2">-</span>
+                                    <input type="text" min="0" numtype="int" size="3" value="1" id="txtinput">
+                                    <span class="span2">+</span>
+                                </td>
+                                <td class="center">5</td>
+                                <td class="center"><span class="span3">￥99909</span></td>
+                                <td class="center">
+                                    <span class="span4 teshu">收藏</span>
+                                    <span class="span4">X删除</span>
+                                </td>
+                            </tr> -->
+                            
                           
                         </tbody>
+                    
                 </table>
+            
+                <div class="margin-b">
+                        总金额（不含运费）：<span>￥0</span>
+                </div>
             </div>
+            <div class="zfooter clear">
+                    <div class="btnl">返回继续购物</div>
+                    <div class="btn2">结算</div>
+            </div>
+            
 
         </div>
     </main>
@@ -372,6 +394,7 @@
         </footer>
 </body>
 <script src="lib/jquery.js"></script>
+<script src="lib/banner.js"></script>
 <script src="js/style.js"></script>
 <script src="js/shopCar.js"></script>
 </html>

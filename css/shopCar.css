@@ -1,7 +1,20 @@
 main{}
-main .margin{margin-top:20px;background: #ffffff;height: 1000px;}
+main .margin{margin-top:20px;background: #ffffff;}
 main .margin .main-t{height: 85px;background: url(../images/liucheng.gif) no-repeat 0 0};
 main .margin .main-c{}
 main .margin .main-c .checktxt{width: 1160px;height: 32px;background: #c40001;padding-left: 40px;font-size:14px;color: #ffffff;line-height: 32px;}
 main .margin .main-c table{margin-top: 10px;}
-main .margin .main-c table thead tr th{background: #cccccc;height: 30px;}
+main .margin .main-c table thead tr th{background:#cccccc;height: 30px;}
+main .margin .main-c table tbody tr td{height: 90px;}
+main .margin .main-c table tbody tr td.center{text-align: center;}
+main .margin .main-c table tbody tr td img{width: 70px;height: 70px;border: 1px solid #cccccc;margin-left: 10px;}
+main .margin .main-c table tbody tr td #txtinput{height: 30px;text-align: center;}
+main .margin .main-c table tbody tr td .span1,.span3{color: red;}
+main .margin .main-c table tbody tr td .span2{border: 1px solid #cccccc;padding:3px;cursor: pointer;}
+main .margin .main-c table tbody tr td .span4{color: red;padding-left: 25px;font-size: 14px;cursor: pointer;}
+main .margin .main-c table tbody tr td .span4.teshu{background: url(../images/small.gif) no-repeat;}
+main .margin .margin-b{height: 20px;border-bottom: 1px solid #cccccc;margin:20px 0;padding: 10px 20px 10px 0;text-align: right;font-size: 18px}
+main .margin .margin-b span{color: red;}
+main .margin .zfooter{font:18px/48px "";color: #ffffff;}
+main .margin .zfooter .btnl{float: left;width: 122px;height: 48px;background:#c4c111;text-align: center;cursor: pointer;}
+main .margin .zfooter .btn2{float: right;width: 122px;height: 48px;background: #c40001;text-align: center;cursor: pointer;}
