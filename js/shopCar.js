@@ -5,6 +5,7 @@
             this.box=$('.box');
             this.url='http://localhost/item/data/goods.json';
             this.load();
+            
         }
         load(){
             var that=this;
@@ -13,6 +14,7 @@
                 success:function(res){
                     that.record=res;
                     //console.log(that.record);
+                    
                     that.getLoacl();
                     
                 }
@@ -29,19 +31,20 @@
                         var price=this.record[i].price.substring(1,this.record[i].price.length);
                         var add=price*this.car[j].num;
                         sum=sum+add;
+                        
                         str+=`
                                 
-                                    <tr abc='${this.car[j].id}'>
+                                    <tr abc='${this.record[i].goodsId}'>
                                         <td>
                                             <img src="${this.record[i].url}" alt="">
                                             <span class="span1">${this.record[i].name}</span>
                                         </td>
                                         <td class="center">无</td>
                                         <td class="center">${this.record[i].price}</td>
-                                        <td class="center">
-                                            <span class="span2 spanjian">-</span>
+                                        <td class="center" id="yuyu">
+                                            <span class="span2 spanjian" id="jian">-</span>
                                             <input type="text" min="0" numtype="int" size="3" value="${this.car[j].num}" id="txtinput">
-                                            <span class="span2 spanadd">+</span>
+                                            <span class="span2 spanadd" id="jia">+</span>
                                         </td>
                                         <td class="center">会员价</td>
                                         <td class="center"><span class="span3">￥${add}</span></td>
@@ -56,55 +59,47 @@
 
                 }
             }
-            // if(i==this.record.length){
-            //     str=str+`
-            //     <tr>
-            //                             <td>
-            //                                 <img src="" alt="">
-            //                                 <span class="span1"></span>
-            //                             </td>
-            //                             <td class="center"></td>
-            //                             <td class="center"></td>
-            //                             <td class="center">
-            //                                 <span class="span2"></span>
-            //                                 <input type="text" min="0" numtype="int" size="3" value="" id="txtinput">
-            //                                 <span class="span2"></span>
-            //                             </td>
-            //                             <td class="center"></td>
-            //                             <td class="center"><span class="span3"></span></td>
-            //                             <td class="center">
-            //                                 <span class="span4 teshu"></span>
-            //                                 <span class="span4"></span>
-            //                             </td>
-            //                         </tr>
-            //     `
-            // }
+
             console.log(sum);
             $('.box').html(str);
             $('.margin-b').children('span').html('￥'+sum);
             this.delete();
+            this.addEvent();
+               
+        }
+        //增减效果
+        addEvent(){
+            this.tt=localStorage.getItem('car')?JSON.parse(localStorage.getItem('car')):[];
+            //console.log(this.tt);
+            var that=this;
+            this.box[0].onclick=function(){
+                var e=event||window.event;
+                var target=e.target||e.srcElement;
+                if(target.id=='jian'){
+                    that.abc=target.parentNode.parentNode.getAttribute('abc')
+                    for(var i=0;i<that.tt.length;i++){
+                        if(that.tt[i].id==that.abc){
+                            if(that.tt[i].num==0){
+                                that.tt[i].num=0;
+                            }else{that.tt[i].num--;}
+                        }
+                    }
+                    localStorage.setItem('car',JSON.stringify(that.tt));
+                    that.getLoacl();
+                }
+                if(target.id=='jia'){
+                    that.abc=target.parentNode.parentNode.getAttribute('abc')
+                    for(var i=0;i<that.tt.length;i++){
+                        if(that.tt[i].id==that.abc){
+                            that.tt[i].num++;
+                        }
+                    }
+                    localStorage.setItem('car',JSON.stringify(that.tt));
+                    that.getLoacl();
+                }
+            }
             
         }
-        // addEvent(stringnum){
-        //     console.log(typeof num2);
-        //     $('.spanjian').on('click',function(){
-        //         if(num2==0){
-        //             num2=0;
-        //         }else{
-        //             num2--;
-                    
-        //         }
-        //     })
-        //     $('.spanadd').on('click',function(){
-        //         num2++;
-        //         that.car[j].num='num2';
-        //     })
-            
-        // }
-
-
-
-
 
         delete(){
             var that=this;

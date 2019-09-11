@@ -17,9 +17,13 @@ main .margin .carbuy .carbuy-c .goodsprice ul li em{color: #000000;}
 main .margin .carbuy .carbuy-c .goodsprice ul li.t1 em{color: #E4393C;font-weight: bold;font-size: 20px;
 font-family: Arial,Verdana}
 main .margin .carbuy .carbuy-c .addTocar{width: 540;border-bottom: 1px solid #cccccc;position: relative;}
-main .margin .carbuy .carbuy-c .addTocar .size{width: 170px;height: 40px;font:18px/40px "";color: #ffffff;text-align: center;margin-top: 30px;margin-bottom:40px;}
+main .margin .carbuy .carbuy-c .addTocar .addadd{text-align: left;margin-top: 10px;}
+main .margin .carbuy .carbuy-c .addTocar .addadd #txtinput{height: 25px;text-align: center;}
+main .margin .carbuy .carbuy-c .addTocar .addadd .span2{border: 1px solid #cccccc;padding:3px;cursor: pointer;}
+main .margin .carbuy .carbuy-c .addTocar .size{width: 170px;height: 40px;font:18px/40px "";color: #ffffff;text-align: center;margin-top: 20px;margin-bottom:40px;}
 main .margin .carbuy .carbuy-c .addTocar .btnbuy{background: #c40001;float: left;margin-right: 20px;cursor: pointer;}
 main .margin .carbuy .carbuy-c .addTocar .btncar{float: left;background: #c45f00 url(../images/cart_icon.png) no-repeat 10px;padding-left: 30px;width: 140px;cursor: pointer;}
+main .margin .carbuy .carbuy-c .addTocar .newsyu{position: absolute;width: 30px;height: 30px;left: 360px;top: 30px;text-align: center;line-height: 30px;font-size: 25px;color: red;display: none;}
 main .margin .carbuy .carbuy-c .jifen{font-size: 12px;padding-top: 20px;}
 main .margin .carbuy .carbuy-c .jifen h3{color: #999999;margin-bottom: 15px;}
 main .margin .carbuy .carbuy-c .jifen .jubao{color: #000}
@@ -50,7 +54,7 @@ main .margin .goodsproduce .spnews .detailnews ul li{float: left;height: 30px;li
 main .margin .goodsproduce .spnews .imgnews{margin-top: 40px;width: 960px;}
 main .margin .goodsproduce .spnews .imgnews img{display: block;width: 960px;height: 1280px;} 
 main .margin .goodsproduce .spnews .spnews-t ul li.active{background: #ff0000;}
-.tiaozhuan{position: absolute;left: 792px;top: 475px;width: 300px;height: 100px;border: 1px solid #cccccc;background: #ffffff;display: none;}
+.tiaozhuan{position: absolute;left: 792px;top: 504px;width: 300px;height: 100px;border: 1px solid #cccccc;background: #ffffff;display: none;}
 .tiaozhuan h5{font:16px/34px "";background: #fafafa;color: #333333;padding-left: 10px;border-bottom: 1px solid #cccccc}
 .tiaozhuan span{width: 80px;height:30px;border-radius: 5px;font: 14px/30px "";text-align: center;color: #ffffff;margin-top: 20px;margin-left: 46px;}
 .tiaozhuan span.r1{background: #ff0000;display: inline-block;cursor: pointer;}

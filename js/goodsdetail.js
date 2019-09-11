@@ -192,15 +192,36 @@ new shopCar();
 
 
 //购物车按钮
+var nun=carshopx;
+var carshopx=localStorage.getItem('car')?JSON.parse(localStorage.getItem('car')):[];
+var carshopy=localStorage.getItem('goods');
+if(carshopx.length<1){
+	nun=1;
+}
+for(var i=0;i<carshopx.length;i++){
+	if(carshopx[i].id==carshopy){
+		nun=carshopx[i].num;
+	}else{
+		nun=1;
+	}
+}
+
 $('.btncar').on('click',function(){
 	if(localStorage.getItem('login')){
 		$('.tiaozhuan').stop().show().children('.r1').on('click',function(){window.location.href='./index.html'}).parent().children('.r2').on('click',function(){window.location.href='./shoppCar.html'});
 	}else{
 		window.location.href='./land.html';
-		
 	}
+	$('.newsyu').stop().show(200);
+	setTimeout(() => {
+		$('.newsyu').stop().hide(100);
+		$('.tiaozhuan').stop().hide(100);
+	}, 1500);
+	$('#txtinput').val(nun++);
 	
 })
+
+
 
 
 

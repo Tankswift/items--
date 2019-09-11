@@ -241,15 +241,15 @@ function floor(num,index){
         })
     })
 }
-var num1=$('nav')[0].offsetTop;
+var num1=$('.ba')[0].offsetTop;
 var num2=$('#tankswift')[0].offsetTop;
 var num3=$('.l1')[0].offsetTop;
 var num4=$('.l2')[0].offsetTop;
 var num5=$('.l3')[0].offsetTop;
 var num6=$('.l4')[0].offsetTop;
+// var num6=$('.l4')[0].offsetTop;
 // var num5=$('#hotBuy').eq(2)[0].offsetTop;
 // var num6=$('#hotBuy').eq(3)[0].offsetTop;
-
 floor(num1,0);
 floor(num2,1);
 floor(num3,2);
